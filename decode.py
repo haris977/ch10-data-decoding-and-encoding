@@ -11,7 +11,7 @@ param_names = []
 scale = 1.0
 param_count = 0
 
-with open("data.ch10", "rb") as ch10, open("decodednp.csv", "w", newline="") as csvfile:
+with open("data.ch10", "rb") as ch10, open("decodednpsd.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
 
     while True:
