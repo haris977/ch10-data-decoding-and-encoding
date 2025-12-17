@@ -35,4 +35,5 @@ with open("data.ch10", "rb") as ch10, open("decodednpsd.csv", "w", newline="") a
         elif dtype == PCM_TYPE and param_count > 0:
             raw = np.frombuffer(payload, dtype="<i2", count=param_count)
             eng = np.round(raw * scale, 1)
-            writer.writerow(eng.tolist())
+            writer.writerow(eng.tolist()) #this is my second commit wala s
+            print ("finish the files")
